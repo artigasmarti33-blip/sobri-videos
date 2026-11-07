@@ -1,4 +1,4 @@
-# Procedimiento de publicación automática (autorizado por el usuario el 2026-11-07: "a partir de ahora publícalos tú todos")
+# Procedimiento de publicación automática (autorizado por el usuario el 2026-11-07: "a partir de ahora publícalos tú todos"; quiere AVISO de cada subida)
 La sesión principal (session_019ku4qY24Puv9gfxy1JVCbA, con el conector Metricool) publica TODOS los vídeos del canal
 en TikTok, Instagram (Reel) y YouTube (Short) con Metricool, brand/blogId **7944183**, zona horaria Europe/Madrid.
 
@@ -19,6 +19,9 @@ Si una hora ya pasó (o faltan < 30 min) cuando el vídeo esté listo: programar
    `instagramData: {type: "REEL", showReelOnFeed: true}`; `tiktokData: {privacyOption: "PUBLIC_TO_EVERYONE"}`;
    `youtubeData: {type: "short", title: <titulo_youtube.txt o el gancho ≤ 90 car. + " #Shorts">, privacy: "public", madeForKids: false, category: NEWS_POLITICS (noticias) / EDUCATION (curiosidades) / ENTERTAINMENT (serie)}`;
    `firstCommentText` = opción 1 de comentario.txt (en Instagram/TikTok queda como primer comentario para fijar).
-3. Avisar al usuario (SendUserFile proactive) con el vídeo, el texto, la hora y el plannerUrl, ≥ 30 min antes de publicarse.
-   Si dice "para", borrar/posponer en Metricool (updateScheduledPost con draft: true).
-4. Apuntar en el registro del proyecto: hora de publicación y redes.
+3. AVISO 1 (al programar, ≥ 30 min antes): SendUserFile (proactive) con el vídeo + mensaje "📅 Programado: <vídeo> · <hora> · TikTok, Instagram y YouTube"
+   con el texto y el plannerUrl, y PushNotification con el mismo resumen corto. Si dice "para", posponer en Metricool (updateScheduledPost con draft: true).
+4. AVISO 2 (a la hora de publicación): programar con send_later un recordatorio a la hora exacta de publicación que haga:
+   PushNotification + mensaje "🚀 Publicando ahora: <vídeo> en TikTok, Instagram y YouTube"; 10 min después comprobar con getScheduledPosts
+   (ya no debe estar pendiente) y avisar "✅ Publicado" o "⚠️ Falló en <red>" con lo que haya que hacer.
+5. Apuntar en el registro del proyecto: hora de publicación y redes.
