@@ -12,6 +12,7 @@ en TikTok, Instagram (Reel) y YouTube (Short) con Metricool, brand/blogId **7944
 | 16:00 | Acertijos |
 | 18:00 | Curiosidades |
 | 20:30 | Parte nueva de la serie MENSAJES |
+| 22:00 | Parte nueva de la serie 30 DÍAS |
 Si una hora ya pasó (o faltan < 30 min) cuando el vídeo esté listo: programar dentro de 30-45 min, separando ≥ 45 min entre vídeos.
 
 ## Pasos por vídeo
