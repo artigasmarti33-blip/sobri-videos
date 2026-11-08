@@ -23,3 +23,8 @@ Si una hora ya pasó (o faltan < 30 min) cuando el vídeo esté listo: programar
    PushNotification + mensaje "🚀 Publicando ahora: <vídeo> en TikTok, Instagram y YouTube"; 10 min después comprobar con getScheduledPosts
    (ya no debe estar pendiente) y avisar "✅ Publicado" o "⚠️ Falló en <red>" con lo que haya que hacer.
 5. Apuntar en el registro del proyecto: hora de publicación y redes.
+
+## Canal en inglés STILL CLIMBING (@stillclimbingfilms) — YouTube horizontal
+Conector **Metricool_Still_Climbing** (otra cuenta de Metricool: martiartigas33@gmail.com), marca/blogId **7961920**, solo YouTube.
+No mezclar con el conector principal (Metricool_Social_Media_Management = marca 7944183, canal español). Detalles en el repo the-quiet-climb/CLAUDE.md.
+Los mp4 se suben aquí en AAAA-MM-DD/stillclimbing_<slug>.mp4. Hora recomendada 17:00-19:00 (mañana en EE. UU.).
